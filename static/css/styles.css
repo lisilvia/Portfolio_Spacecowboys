@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Merriweather-Light';
+    src: url(../fonts//Merriweather-Light.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Merriweather-LightItalic';
+    src: url(../fonts/Merriweather-LightItalic.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/assets/Montserrat-Regular.ttf) format('truetype');
+  }
+  
+  *{
+     margin:0;
+     padding:0;
+  }
+  
+  body {
+    position:absolute;
+    top:0;
+    text-align: center;
+    font-family: 'Merriweather-Light', sans-serif;
+  }
+  
+  h1 {
+      font-family: 'Montserrat-Bold', sans-serif;
+      font-weight: bold;
+      padding: 20px;
+  }
+  
+  h2 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    padding-bottom: 15px;
+  }
+  
+  h3 {
+    padding: 10px 0;
+    font-family: 'Montserrat-Bold', sans-serif;
+  }
+  
+  h4 p {
+    font-family: 'Merriweather-Light';
+    font-size: 0.8em;
+  }
+  
+  h5 p {
+    font-family: 'Merriweather-Light';
+    font-size: 0.6em;
+  }
+  
+  footer {
+      background-color: black;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+  }
+  
+  .btn-section-one {
+  margin-top: 20px;
+  }
+  
+  .dark-text {
+    color: black;
+  }
+  
+  .header {
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  
+  .light-text {
+    color: #fff;
+  }
+  
+  /* CARDS */
+  .card-content {
+      display: flex;
+      align-items: center;
+      width: 300px;
+      height: 150px;
+  }
+  
+  .card-image {
+      flex: 2;
+      object-fit: cover;
+      max-width: 150px;
+      max-height: 150px;
+  }
+  
+  .card-text {
+      flex: 1;
+      text-align: left;
+      font-size: 12px;
+  }
+  
+  .card-title {
+      font-size: 20px;
+  }
+  
+  .carousel-inner {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  }
+  
+  
+  .carousel-inner .card {
+      background-color: rgba(0,0,0,0.4);
+      color: white;
+  }
+  
+  /* Style for carousel navigation */
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 5%;
+  }
+  
+  /* FEATURES */
+  .feature-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 30px;
+            position: relative;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.15);
+  }
+  
+  .feature-icon {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: yellow;
+      padding: 10px;
+      border: 1px solid yellow;
+      border-radius: 50%;
+  }
+  
+  /* FORM */
+  .button-send {
+    margin-bottom: 5%;
+  }
+  
+  .form-group {
+      margin-bottom: 20px;
+  }
+  
+  .error-message {
+      color: red;
+  }
+  
+  /* GALLERY */
+  img{
+    max-width: 100%;
+  }
+  
+  .gallery{
+    background-color: black;
+    padding: 80px 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .gallery img {
+    cursor: pointer;
+  }
+  
+  #gallery-modal .modal-img {
+    width: 100%;
+  }
+  
+  /* TEAM CARDS */
+  .horizontal-flip-card {
+      perspective: 1000px;
+      padding-top: 20%;
+      padding-bottom: 20%;
+  }
+  
+  .horizontal-flip-card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+  }
+  
+  .horizontal-flip-card:hover .horizontal-flip-card-inner {
+      transform: rotateY(180deg);
+  }
+  
+  .horizontal-flip-card-front,
+  .horizontal-flip-card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .horizontal-flip-card-front {
+      transform: rotateY(0deg);
+      cursor: pointer;
+  }
+  
+  .horizontal-flip-card-back {
+      transform: rotateY(180deg);
+  }
+  
+  
+  .horizontal-flip-card-back .card-text {
+    font-size: 0.7em;
+    padding: 2em;
+  }
+  
+  .horizontal-flip-card-back .card {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  .horizontal-flip-card-front .card {
+      background-color: rgba(0,0,0,0.4);
+      color: white;
+  }
+  
+  
+   /* Navbar */
+  .navbar {
+     position: relative;
+     z-index: 1;
+     transition: all 0.5s;
+  }
+  
+  .navbar-brand {
+     color: white;
+     font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+     color: white;
+     font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:hover {
+     color: yellow !important;
+  }
+  
+  .navbar-scrolled {
+  background-color: gray;
+  }
+  
+  .nav-item {
+   padding: 7px 18px;
+  }
+  
+   /* TITLE */
+  .section-one {
+  text-align: center;
+  margin: 10em auto;
+  color: white;
+  }
+  
+  .section-two {
+   background: lightgray;
+   text-align: center;
+   padding: 7%;
+  }
+  
+  .section-three {
+   text-align: center;
+   padding-bottom: 10%;
+  }
+  
+  .section-three-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .section-three .header {
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+  .section-five {
+   background-color: gray;
+   text-align: center;
+  }
+  
+  .section-five .header {
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+  .title-image {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+  }
+  
+  @media (max-width: 1000px) {
+   .navbar-collapse {
+     background-color: rgba(0,0,0,0.9);
+     position: absolute;
+     top: 0;
+     left:0;
+     right: 0;
+     height: 100vh;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     padding-top: 30%;
+   }
+  
+   .navbar-toggler,
+    .navbar-brand {
+     z-index: 1;
+   }
+  }
+  
